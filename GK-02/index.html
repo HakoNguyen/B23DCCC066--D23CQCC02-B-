@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Countdown</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/ae219df658.js" crossorigin="anonymous"></script>
+</head>
+  <link rel="stylesheet" href="main.css" />
+  <body>
+    <i class="fa-solid fa-clock"></i>
+    <div oninput="displaymin()">
+      <input type="number" id="minutes" min="0" max="59" placeholder="MINS" /> :
+      <input type="number" id="seconds" min="0" max="59" placeholder="SECS" />
+    </div>
+    <div id="display"></div>
+    <div class="buttons">
+      <button id="start" onclick="watch()">Start</button>
+      <button id="reset" onclick="reset()">Reset</button>
+    </div>
+    <audio id="audio" src="sound.mp3"></audio>
+    <script src="main.js"></script>
+  </body>
+</html>
