@@ -37,7 +37,11 @@
     margin: 0 0 6px 0;
     position: relative
   }
-  
+  div#resume h4 {
+    font-size: 20px;
+    margin: 0 0 6px 0;
+    position: relative
+  }
   div#resume h2 span {
     position: absolute;
     bottom: 0;
@@ -60,6 +64,17 @@
     font-weight: normal
   }
   
+  div#resume h4 span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-style: italic;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    color: #999;
+    font-weight: normal
+  }
+
   div#resume p {
     margin: 0 0 16px 0
   }
@@ -122,6 +137,12 @@
       display: block;
       margin-top: 2px
     }
+    div#resume h4 span {
+      position: static;
+      display: block;
+      margin-top: 2px
+    }
+
   }
   
   @media screen and (max-width:550px) {
@@ -157,6 +178,11 @@
       font-size: 18px
     }
     div#resume h3 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px
+    }
+    div#resume h4 {
       font-style: normal;
       font-weight: 400;
       font-size: 18px
